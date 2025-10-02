@@ -1,0 +1,103 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c9e3fc;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Intro section with zoom */
+.intro {
+  background-color: #d0caff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(65, 5, 85, 0.765);
+  border-left: 5px solid #6c63ff;
+  transition: transform 0.3s ease;
+}
+
+.intro:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.intro h2 {
+  margin-bottom: 10px;
+  color: #262626;
+  font-size: 22px;
+}
+
+/* Content items with zoom on hover */
+.item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(41, 30, 245, 0.728);
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Title box styling */
+.title-box {
+  background-color: #cac6fa;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #c5c2ff;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: left;
+  color: #4b44c4;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+/* Box row styling */
+.box-row {
+  display: flex;
+  flex-wrap: nowrap; /* جلوگیری از رفتن به خط بعد */
+  gap: 10px;
+  justify-content: space-between;
+}
+
+/* Individual box styling with zoom on hover */
+.box {
+  flex: 0 0 50%;
+  background-color: rgb(185, 157, 211);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  color: #3e0d69;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgb(63, 3, 95);
+  border: 1px solid #5e28a8;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
